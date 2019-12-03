@@ -2,9 +2,21 @@
 
 namespace HC1_W3
 {
-    struct Student
+    abstract class Persoon
     {
         public string Naam { get; set; }
+
+        public int Leeftijd { get; set; }
+    }
+
+    class Student : Persoon
+    {
+
+    }
+
+    class Docent : Persoon
+    {
+        public string Functie { get; set; }
     }
     class Program
     {
